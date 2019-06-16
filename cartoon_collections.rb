@@ -25,8 +25,8 @@ def find_the_cheese(array)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   array.find do|x|
-  if array.include?(x) == true
-    return array.pop(x)
+  if cheese_types(x) == true
+    return x
   else
     return nil
 end
